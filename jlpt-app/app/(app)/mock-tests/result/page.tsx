@@ -1,8 +1,8 @@
-// app/mock-tests/result/page.tsx
+// app/(app)/mock-tests/result/page.tsx
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 import { getMockResults } from "@/app/_lib/mockStore";
@@ -116,10 +116,16 @@ function skillEmoji(sk: Skill) {
   return "📖";
 }
 
-export default function MockResultPage() {
+/**
+ * ✅ IMPORTANT:
+ * useSearchParams() must be inside a component wrapped by <Suspense>.
+ * Otherwise Vercel build may fail with prerender error.
+ */
+function MockResultInner() {
   const sp = useSearchParams();
 
-  // NOTE: query is for display / retake links. Actual shown data should come from stored result.
+  // Query params are for display / retake links.
+  // Actual shown data comes from stored result.
   const qpLevel = (sp.get("level") ?? "N5").toUpperCase();
   const qpSlot = Number(sp.get("slot") ?? "1") || 1;
   const run = sp.get("run");
@@ -135,7 +141,7 @@ export default function MockResultPage() {
 
   const [loadErr, setLoadErr] = useState<string | null>(null);
 
-  // ✅ IMPORTANT: re-read when `run` changes (SPA navigation timing fix)
+  // Re-read when `run` changes (SPA navigation timing fix)
   useEffect(() => {
     setMounted(true);
 
@@ -150,8 +156,8 @@ export default function MockResultPage() {
 
     try {
       const ms = readMockStore();
-      setAttemptsCompat(Array.isArray(ms.attempts) ? ms.attempts : []);
-      setSourceKeyCompat(ms.sourceKey ?? null);
+      setAttemptsCompat(Array.isArray((ms as any).attempts) ? (ms as any).attempts : []);
+      setSourceKeyCompat((ms as any).sourceKey ?? null);
     } catch {
       setAttemptsCompat([]);
       setSourceKeyCompat(null);
@@ -161,7 +167,7 @@ export default function MockResultPage() {
   const chosenV1 = useMemo(() => {
     if (!resultsV1.length) return null;
     if (run) {
-      const found = resultsV1.find((r) => String(r.id) === String(run));
+      const found = resultsV1.find((r: any) => String(r.id) === String(run));
       if (found) return found;
     }
     return resultsV1[0] ?? null; // newest first
@@ -272,7 +278,6 @@ export default function MockResultPage() {
 
   const attemptsCount = resultsV1.length || attemptsCompat.length || 0;
 
-  // ✅ PASS/FAIL color hint
   const glow = view?.pass
     ? "0 0 0 1px rgba(60,255,140,0.20) inset, 0 0 35px rgba(60,255,140,0.10)"
     : "0 0 0 1px rgba(255,80,80,0.18) inset, 0 0 35px rgba(255,80,80,0.10)";
@@ -326,7 +331,7 @@ export default function MockResultPage() {
             <SoftCard>
               <div style={{ fontWeight: 950, fontSize: 18 }}>No results yet</div>
               <div style={{ marginTop: 8, opacity: 0.8, lineHeight: 1.7 }}>
-                まだ模試結果がありません。Mock Tests から模試を受けると、ここにスコアが表示されます。
+                Take a mock test to see results here.
               </div>
               <div style={{ marginTop: 12, display: "flex", gap: 10, flexWrap: "wrap" }}>
                 <NavBtn href="/mock-tests">Take a mock →</NavBtn>
@@ -365,7 +370,6 @@ export default function MockResultPage() {
                   {view.totalQ != null && view.correctQ != null ? <Pill>correct {view.correctQ}/{view.totalQ}</Pill> : null}
                 </div>
 
-                {/* ✅ FAIL reasons */}
                 {!view.pass ? (
                   <div style={{ marginTop: 4, fontSize: 12, opacity: 0.78, lineHeight: 1.65 }}>
                     <div style={{ fontWeight: 950, marginBottom: 6 }}>Why failed</div>
@@ -382,7 +386,7 @@ export default function MockResultPage() {
                 )}
 
                 <div style={{ marginTop: 4, fontSize: 12, opacity: 0.65, lineHeight: 1.6 }}>
-                  Tip: 今は localStorage 保存（開発中）。ブラウザデータ削除で結果も消える。
+                  Tip: results are stored in localStorage during development.
                 </div>
               </div>
             </div>
@@ -434,10 +438,6 @@ export default function MockResultPage() {
                   </div>
                 ))}
               </div>
-
-              <div style={{ marginTop: 12, fontSize: 12, opacity: 0.65, lineHeight: 1.6 }}>
-                ※ v1: bySkillPercent / bySkillFlat / bySkill.accuracy の順で表示。compat: 互換ストア値。
-              </div>
             </SoftCard>
 
             {/* Next actions */}
@@ -446,11 +446,11 @@ export default function MockResultPage() {
               <div style={{ marginTop: 6, fontSize: 24, fontWeight: 950 }}>What to do</div>
 
               <div style={{ marginTop: 12, fontSize: 13, opacity: 0.86, lineHeight: 1.7 }}>
-                • すぐ次の模試を受ける → <b>Mock Tests</b>
+                • Take another mock → <b>Mock Tests</b>
                 <br />
-                • 推移を見たい → <b>Reports</b>
+                • See analytics → <b>Reports</b>
                 <br />
-                • 弱点で復習したい → <b>Practice</b>（連携は次のステップで実装）
+                • Review weak areas → <b>Practice</b>
               </div>
 
               <div style={{ marginTop: 12, display: "flex", gap: 10, flexWrap: "wrap" }}>
@@ -464,14 +464,26 @@ export default function MockResultPage() {
                   Retake same
                 </NavBtn>
               </div>
-
-              <div style={{ marginTop: 12, fontSize: 12, opacity: 0.65, lineHeight: 1.6 }}>
-                run が見つからない場合でも “最新結果” を表示する仕様。
-              </div>
             </SoftCard>
           </div>
         ) : null}
       </div>
     </main>
+  );
+}
+
+export default function MockResultPage() {
+  return (
+    <Suspense
+      fallback={
+        <main style={pageWrap}>
+          <div style={container}>
+            <SoftCard>Loading…</SoftCard>
+          </div>
+        </main>
+      }
+    >
+      <MockResultInner />
+    </Suspense>
   );
 }
