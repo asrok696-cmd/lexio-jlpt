@@ -83,7 +83,7 @@ function NavBtn({ href, children }: { href: string; children: React.ReactNode })
   );
 }
 
-function spGet(sp: SP, key: string): string | null {
+function spGet(sp: SP | undefined, key: string): string | null {
   const v = sp?.[key];
   if (Array.isArray(v)) return v[0] ?? null;
   return typeof v === "string" ? v : null;
@@ -123,15 +123,16 @@ function skillEmoji(sk: Skill) {
 }
 
 export default function ResultClient({ searchParams }: { searchParams: SP }) {
-  // ✅ useSearchParams() を使わない
   const qpLevel = (spGet(searchParams, "level") ?? "N5").toUpperCase();
   const qpSlot = Number(spGet(searchParams, "slot") ?? "1") || 1;
   const run = spGet(searchParams, "run");
 
   const [mounted, setMounted] = useState(false);
+
   const [resultsV1, setResultsV1] = useState<MockResultV1[]>([]);
   const [attemptsCompat, setAttemptsCompat] = useState<MockAttempt[]>([]);
   const [sourceKeyCompat, setSourceKeyCompat] = useState<string | null>(null);
+
   const [loadErr, setLoadErr] = useState<string | null>(null);
 
   useEffect(() => {
@@ -174,8 +175,8 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
   const view = useMemo(() => {
     if (chosenV1) {
       const r: any = chosenV1;
-      const percent = clampPct(Number(r.percent ?? r.total ?? r.accuracy ?? 0));
 
+      const percent = clampPct(Number(r.percent ?? r.total ?? r.accuracy ?? 0));
       const totalPassPct = clampPct(Number(r?.passRule?.totalPassPct ?? r?.passRule?.passPercent ?? 60));
       const minSkillPct = clampPct(Number(r?.passRule?.minSkillPct ?? r?.passRule?.minSkillPercent ?? 40));
 
@@ -276,6 +277,7 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
   return (
     <main style={pageWrap}>
       <div style={container}>
+        {/* Header */}
         <div style={{ display: "flex", justifyContent: "space-between", gap: 12, alignItems: "center", flexWrap: "wrap" }}>
           <div>
             <div style={{ fontSize: 44, fontWeight: 950, letterSpacing: -0.5 }}>Mock Result</div>
@@ -302,6 +304,7 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
           </div>
         </div>
 
+        {/* Error / Empty */}
         {loadErr ? (
           <div style={{ marginTop: 12 }}>
             <SoftCard>
@@ -328,14 +331,31 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
           </div>
         ) : null}
 
+        {/* Main */}
         {!loadErr && view ? (
           <div style={{ marginTop: 12, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 12 }}>
-            <div style={{ borderRadius: 18, border: "1px solid rgba(255,255,255,0.10)", background: "rgba(255,255,255,0.05)", padding: 16, boxShadow: glow }}>
+            {/* Summary */}
+            <div
+              style={{
+                borderRadius: 18,
+                border: "1px solid rgba(255,255,255,0.10)",
+                background: "rgba(255,255,255,0.05)",
+                padding: 16,
+                boxShadow: glow,
+              }}
+            >
               <div style={{ fontSize: 12, opacity: 0.72, fontWeight: 950 }}>Summary</div>
               <div style={{ marginTop: 6, fontSize: 28, fontWeight: 950 }}>{view.pass ? "PASS ✅" : "FAIL ❌"}</div>
 
               <div style={{ marginTop: 12, display: "grid", gap: 10 }}>
-                <div style={{ borderRadius: 16, border: "1px solid rgba(255,255,255,0.10)", background: "rgba(0,0,0,0.18)", padding: 14 }}>
+                <div
+                  style={{
+                    borderRadius: 16,
+                    border: "1px solid rgba(255,255,255,0.10)",
+                    background: "rgba(0,0,0,0.18)",
+                    padding: 14,
+                  }}
+                >
                   <div style={{ fontSize: 12, opacity: 0.7, fontWeight: 950 }}>Score</div>
                   <div style={{ marginTop: 4, fontSize: 44, fontWeight: 950 }}>{view.percent}%</div>
                   <div style={{ marginTop: 6, fontSize: 12, opacity: 0.7 }}>
@@ -366,6 +386,7 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
               </div>
             </div>
 
+            {/* Breakdown */}
             <SoftCard>
               <div style={{ fontSize: 12, opacity: 0.72, fontWeight: 950 }}>Breakdown</div>
               <div style={{ marginTop: 6, fontSize: 24, fontWeight: 950 }}>By skill</div>
@@ -386,12 +407,25 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
                     }}
                   >
                     <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                      <div style={{ width: 36, height: 36, borderRadius: 14, display: "grid", placeItems: "center", border: "1px solid rgba(255,255,255,0.10)", background: "rgba(0,0,0,0.22)", fontSize: 16 }}>
+                      <div
+                        style={{
+                          width: 36,
+                          height: 36,
+                          borderRadius: 14,
+                          display: "grid",
+                          placeItems: "center",
+                          border: "1px solid rgba(255,255,255,0.10)",
+                          background: "rgba(0,0,0,0.22)",
+                          fontSize: 16,
+                        }}
+                      >
                         {skillEmoji(sk)}
                       </div>
                       <div>
                         <div style={{ fontWeight: 950 }}>{skillLabel(sk)}</div>
-                        <div style={{ fontSize: 12, opacity: 0.7 }}>{view.kind === "v1" ? `min ${view.minSkillPercent}%` : "Accuracy"}</div>
+                        <div style={{ fontSize: 12, opacity: 0.7 }}>
+                          {view.kind === "v1" ? `min ${view.minSkillPercent}%` : "Accuracy"}
+                        </div>
                       </div>
                     </div>
 
@@ -401,6 +435,7 @@ export default function ResultClient({ searchParams }: { searchParams: SP }) {
               </div>
             </SoftCard>
 
+            {/* Next */}
             <SoftCard>
               <div style={{ fontSize: 12, opacity: 0.72, fontWeight: 950 }}>Next</div>
               <div style={{ marginTop: 6, fontSize: 24, fontWeight: 950 }}>What to do</div>
