@@ -1,0 +1,48 @@
+{
+  "level": "N3",
+  "kanji": [
+    { "char": "感", "onyomi": ["カン"], "kunyomi": [], "romajiOn": ["kan"], "romajiKun": [], "meaning": "feeling / emotion" },
+    { "char": "想", "onyomi": ["ソウ"], "kunyomi": ["おも"], "romajiOn": ["sou"], "romajiKun": ["omo"], "meaning": "idea / thought" },
+    { "char": "意", "onyomi": ["イ"], "kunyomi": [], "romajiOn": ["i"], "romajiKun": [], "meaning": "mind / intention" },
+    { "char": "味", "onyomi": ["ミ"], "kunyomi": ["あじ"], "romajiOn": ["mi"], "romajiKun": ["aji"], "meaning": "taste / flavor" },
+    { "char": "予", "onyomi": ["ヨ"], "kunyomi": [], "romajiOn": ["yo"], "romajiKun": [], "meaning": "beforehand / in advance" },
+    { "char": "定", "onyomi": ["テイ","ジョウ"], "kunyomi": ["さだ"], "romajiOn": ["tei","jou"], "romajiKun": ["sada"], "meaning": "decide / fixed" },
+    { "char": "決", "onyomi": ["ケツ"], "kunyomi": ["き"], "romajiOn": ["ketsu"], "romajiKun": ["ki"], "meaning": "decide" },
+    { "char": "続", "onyomi": ["ゾク"], "kunyomi": ["つづ"], "romajiOn": ["zoku"], "romajiKun": ["tsuzu"], "meaning": "continue" },
+    { "char": "結", "onyomi": ["ケツ"], "kunyomi": ["むす"], "romajiOn": ["ketsu"], "romajiKun": ["musu"], "meaning": "tie / connect" },
+    { "char": "果", "onyomi": ["カ"], "kunyomi": ["は"], "romajiOn": ["ka"], "romajiKun": ["ha"], "meaning": "result / fruit" },
+
+    { "char": "変", "onyomi": ["ヘン"], "kunyomi": ["か"], "romajiOn": ["hen"], "romajiKun": ["ka"], "meaning": "change / strange" },
+    { "char": "化", "onyomi": ["カ","ケ"], "kunyomi": ["ば"], "romajiOn": ["ka","ke"], "romajiKun": ["ba"], "meaning": "change / transform" },
+    { "char": "増", "onyomi": ["ゾウ"], "kunyomi": ["ふ"], "romajiOn": ["zou"], "romajiKun": ["fu"], "meaning": "increase" },
+    { "char": "減", "onyomi": ["ゲン"], "kunyomi": ["へ"], "romajiOn": ["gen"], "romajiKun": ["he"], "meaning": "decrease" },
+    { "char": "比", "onyomi": ["ヒ"], "kunyomi": ["くら"], "romajiOn": ["hi"], "romajiKun": ["kura"], "meaning": "compare" },
+    { "char": "較", "onyomi": ["カク"], "kunyomi": [], "romajiOn": ["kaku"], "romajiKun": [], "meaning": "comparison" },
+    { "char": "最", "onyomi": ["サイ"], "kunyomi": ["もっと"], "romajiOn": ["sai"], "romajiKun": ["motto"], "meaning": "most" },
+    { "char": "強", "onyomi": ["キョウ","ゴウ"], "kunyomi": ["つよ"], "romajiOn": ["kyou","gou"], "romajiKun": ["tsuyo"], "meaning": "strong" },
+    { "char": "弱", "onyomi": ["ジャク"], "kunyomi": ["よわ"], "romajiOn": ["jaku"], "romajiKun": ["yowa"], "meaning": "weak" },
+    { "char": "難", "onyomi": ["ナン"], "kunyomi": ["むずか"], "romajiOn": ["nan"], "romajiKun": ["muzuka"], "meaning": "difficult" },
+
+    { "char": "簡", "onyomi": ["カン"], "kunyomi": [], "romajiOn": ["kan"], "romajiKun": [], "meaning": "simple" },
+    { "char": "単", "onyomi": ["タン"], "kunyomi": [], "romajiOn": ["tan"], "romajiKun": [], "meaning": "simple / single" },
+    { "char": "複", "onyomi": ["フク"], "kunyomi": [], "romajiOn": ["fuku"], "romajiKun": [], "meaning": "complex" },
+    { "char": "雑", "onyomi": ["ザツ","ゾウ"], "kunyomi": [], "romajiOn": ["zatsu","zou"], "romajiKun": [], "meaning": "miscellaneous" },
+    { "char": "必", "onyomi": ["ヒツ"], "kunyomi": ["かなら"], "romajiOn": ["hitsu"], "romajiKun": ["kanara"], "meaning": "certainly" },
+    { "char": "要", "onyomi": ["ヨウ"], "kunyomi": ["い"], "romajiOn": ["you"], "romajiKun": ["i"], "meaning": "necessary" },
+    { "char": "以", "onyomi": ["イ"], "kunyomi": [], "romajiOn": ["i"], "romajiKun": [], "meaning": "by means of / since" },
+    { "char": "上", "onyomi": ["ジョウ"], "kunyomi": ["うえ"], "romajiOn": ["jou"], "romajiKun": ["ue"], "meaning": "above" },
+    { "char": "未", "onyomi": ["ミ"], "kunyomi": [], "romajiOn": ["mi"], "romajiKun": [], "meaning": "not yet" },
+    { "char": "来", "onyomi": ["ライ"], "kunyomi": ["く"], "romajiOn": ["rai"], "romajiKun": ["ku"], "meaning": "come / future" },
+
+    { "char": "経", "onyomi": ["ケイ","キョウ"], "kunyomi": ["へ"], "romajiOn": ["kei","kyou"], "romajiKun": ["he"], "meaning": "pass through / manage" },
+    { "char": "済", "onyomi": ["サイ"], "kunyomi": ["す"], "romajiOn": ["sai"], "romajiKun": ["su"], "meaning": "finish / settle" },
+    { "char": "状", "onyomi": ["ジョウ"], "kunyomi": [], "romajiOn": ["jou"], "romajiKun": [], "meaning": "condition" },
+    { "char": "況", "onyomi": ["キョウ"], "kunyomi": [], "romajiOn": ["kyou"], "romajiKun": [], "meaning": "situation" },
+    { "char": "説", "onyomi": ["セツ"], "kunyomi": ["と"], "romajiOn": ["setsu"], "romajiKun": ["to"], "meaning": "explain / theory" },
+    { "char": "明", "onyomi": ["メイ","ミョウ"], "kunyomi": ["あか"], "romajiOn": ["mei","myou"], "romajiKun": ["aka"], "meaning": "bright / clear" },
+    { "char": "査", "onyomi": ["サ"], "kunyomi": [], "romajiOn": ["sa"], "romajiKun": [], "meaning": "investigate" },
+    { "char": "調", "onyomi": ["チョウ"], "kunyomi": ["しら"], "romajiOn": ["chou"], "romajiKun": ["shira"], "meaning": "investigate / tone" },
+    { "char": "認", "onyomi": ["ニン"], "kunyomi": ["みと"], "romajiOn": ["nin"], "romajiKun": ["mito"], "meaning": "recognize" },
+    { "char": "確", "onyomi": ["カク"], "kunyomi": ["たし"], "romajiOn": ["kaku"], "romajiKun": ["tashi"], "meaning": "certain / confirm" }
+  ]
+}

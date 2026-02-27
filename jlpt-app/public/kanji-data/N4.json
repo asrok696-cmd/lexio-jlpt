@@ -1,0 +1,37 @@
+{
+  "level": "N4",
+  "kanji": [
+    { "char": "朝", "onyomi": ["チョウ"], "kunyomi": ["あさ"], "romajiOn": ["chou"], "romajiKun": ["asa"], "meaning": "morning" },
+    { "char": "昼", "onyomi": ["チュウ"], "kunyomi": ["ひる"], "romajiOn": ["chuu"], "romajiKun": ["hiru"], "meaning": "noon / daytime" },
+    { "char": "晩", "onyomi": ["バン"], "kunyomi": [], "romajiOn": ["ban"], "romajiKun": [], "meaning": "evening" },
+    { "char": "夜", "onyomi": ["ヤ"], "kunyomi": ["よる","よ"], "romajiOn": ["ya"], "romajiKun": ["yoru","yo"], "meaning": "night" },
+    { "char": "前", "onyomi": ["ゼン"], "kunyomi": ["まえ"], "romajiOn": ["zen"], "romajiKun": ["mae"], "meaning": "before / front" },
+    { "char": "後", "onyomi": ["ゴ","コウ"], "kunyomi": ["あと","うしろ"], "romajiOn": ["go","kou"], "romajiKun": ["ato","ushiro"], "meaning": "after / behind" },
+    { "char": "正", "onyomi": ["セイ","ショウ"], "kunyomi": ["ただ"], "romajiOn": ["sei","shou"], "romajiKun": ["tada"], "meaning": "correct" },
+    { "char": "午", "onyomi": ["ゴ"], "kunyomi": [], "romajiOn": ["go"], "romajiKun": [], "meaning": "noon (12pm marker)" },
+    { "char": "毎", "onyomi": ["マイ"], "kunyomi": [], "romajiOn": ["mai"], "romajiKun": [], "meaning": "every" },
+    { "char": "週", "onyomi": ["シュウ"], "kunyomi": [], "romajiOn": ["shuu"], "romajiKun": [], "meaning": "week" },
+    { "char": "去", "onyomi": ["キョ","コ"], "kunyomi": ["さ"], "romajiOn": ["kyo","ko"], "romajiKun": ["sa"], "meaning": "to leave / past" },
+
+    { "char": "家", "onyomi": ["カ","ケ"], "kunyomi": ["いえ","や"], "romajiOn": ["ka","ke"], "romajiKun": ["ie","ya"], "meaning": "house / family" },
+    { "char": "族", "onyomi": ["ゾク"], "kunyomi": [], "romajiOn": ["zoku"], "romajiKun": [], "meaning": "tribe / family" },
+    { "char": "兄", "onyomi": ["ケイ","キョウ"], "kunyomi": ["あに"], "romajiOn": ["kei","kyou"], "romajiKun": ["ani"], "meaning": "older brother" },
+    { "char": "弟", "onyomi": ["テイ","ダイ"], "kunyomi": ["おとうと"], "romajiOn": ["tei","dai"], "romajiKun": ["otouto"], "meaning": "younger brother" },
+    { "char": "姉", "onyomi": ["シ"], "kunyomi": ["あね"], "romajiOn": ["shi"], "romajiKun": ["ane"], "meaning": "older sister" },
+    { "char": "妹", "onyomi": ["マイ"], "kunyomi": ["いもうと"], "romajiOn": ["mai"], "romajiKun": ["imouto"], "meaning": "younger sister" },
+    { "char": "夫", "onyomi": ["フ","フウ"], "kunyomi": ["おっと"], "romajiOn": ["fu","fuu"], "romajiKun": ["otto"], "meaning": "husband" },
+    { "char": "妻", "onyomi": ["サイ"], "kunyomi": ["つま"], "romajiOn": ["sai"], "romajiKun": ["tsuma"], "meaning": "wife" },
+    { "char": "主", "onyomi": ["シュ"], "kunyomi": ["ぬし","おも"], "romajiOn": ["shu"], "romajiKun": ["nushi","omo"], "meaning": "main / master" },
+    { "char": "奥", "onyomi": ["オウ"], "kunyomi": ["おく"], "romajiOn": ["ou"], "romajiKun": ["oku"], "meaning": "inner / deep" },
+    { "char": "私", "onyomi": ["シ"], "kunyomi": ["わたし"], "romajiOn": ["shi"], "romajiKun": ["watashi"], "meaning": "I / private" },
+    { "char": "王", "onyomi": ["オウ"], "kunyomi": [], "romajiOn": ["ou"], "romajiKun": [], "meaning": "king" },
+    { "char": "様", "onyomi": ["ヨウ"], "kunyomi": ["さま"], "romajiOn": ["you"], "romajiKun": ["sama"], "meaning": "honorific / appearance" },
+    { "char": "才", "onyomi": ["サイ"], "kunyomi": [], "romajiOn": ["sai"], "romajiKun": [], "meaning": "talent / years old" },
+
+    { "char": "赤", "onyomi": ["セキ","シャク"], "kunyomi": ["あか"], "romajiOn": ["seki","shaku"], "romajiKun": ["aka"], "meaning": "red" },
+    { "char": "青", "onyomi": ["セイ","ショウ"], "kunyomi": ["あお"], "romajiOn": ["sei","shou"], "romajiKun": ["ao"], "meaning": "blue" },
+    { "char": "白", "onyomi": ["ハク","ビャク"], "kunyomi": ["しろ"], "romajiOn": ["haku","byaku"], "romajiKun": ["shiro"], "meaning": "white" },
+    { "char": "黒", "onyomi": ["コク"], "kunyomi": ["くろ"], "romajiOn": ["koku"], "romajiKun": ["kuro"], "meaning": "black" },
+    { "char": "色", "onyomi": ["ショク","シキ"], "kunyomi": ["いろ"], "romajiOn": ["shoku","shiki"], "romajiKun": ["iro"], "meaning": "color" }
+  ]
+}

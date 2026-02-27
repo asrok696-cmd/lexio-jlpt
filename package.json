@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "recharts": "^3.7.0",
+    "stripe": "^20.4.0"
+  }
+}

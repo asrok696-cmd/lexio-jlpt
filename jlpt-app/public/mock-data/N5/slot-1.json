@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "level": "N5",
+  "slot": 1,
+  "title": "N5 Mock · Slot 1",
+  "timeLimitSec": 600,
+  "questions": [
+    {
+      "id": "N5-S1-Q1",
+      "skill": "vocab",
+      "prompt": "（　）に入る言葉を選びなさい。\n私は毎朝（　）を飲みます。",
+      "choices": ["みず", "みる", "みせ", "みち"],
+      "answerIndex": 0,
+      "explanation": "飲みます → 水"
+    },
+    {
+      "id": "N5-S1-Q2",
+      "skill": "grammar",
+      "prompt": "正しい文を選びなさい。",
+      "choices": [
+        "昨日は雨が降りました。",
+        "昨日は雨が降ります。",
+        "昨日は雨が降りです。",
+        "昨日は雨が降るました。"
+      ],
+      "answerIndex": 0,
+      "explanation": "昨日 → 過去形"
+    },
+    {
+      "id": "N5-S1-Q3",
+      "skill": "reading",
+      "prompt": "田中さんは学校へ行きました。\n田中さんはどこへ行きましたか。",
+      "choices": ["会社", "公園", "学校", "家"],
+      "answerIndex": 2,
+      "explanation": "本文に学校とある"
+    }
+  ]
+}

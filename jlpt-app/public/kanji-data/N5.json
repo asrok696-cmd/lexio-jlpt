@@ -1,0 +1,48 @@
+{
+  "level": "N5",
+  "kanji": [
+    { "char": "日", "onyomi": ["ニチ","ジツ"], "kunyomi": ["ひ","か"], "romajiOn": ["nichi","jitsu"], "romajiKun": ["hi","ka"], "meaning": "day / sun" },
+    { "char": "月", "onyomi": ["ゲツ","ガツ"], "kunyomi": ["つき"], "romajiOn": ["getsu","gatsu"], "romajiKun": ["tsuki"], "meaning": "month / moon" },
+    { "char": "火", "onyomi": ["カ"], "kunyomi": ["ひ"], "romajiOn": ["ka"], "romajiKun": ["hi"], "meaning": "fire" },
+    { "char": "水", "onyomi": ["スイ"], "kunyomi": ["みず"], "romajiOn": ["sui"], "romajiKun": ["mizu"], "meaning": "water" },
+    { "char": "木", "onyomi": ["モク","ボク"], "kunyomi": ["き"], "romajiOn": ["moku","boku"], "romajiKun": ["ki"], "meaning": "tree / wood" },
+    { "char": "金", "onyomi": ["キン"], "kunyomi": ["かね"], "romajiOn": ["kin"], "romajiKun": ["kane"], "meaning": "gold / money" },
+    { "char": "土", "onyomi": ["ド","ト"], "kunyomi": ["つち"], "romajiOn": ["do","to"], "romajiKun": ["tsuchi"], "meaning": "earth / soil" },
+    { "char": "人", "onyomi": ["ジン","ニン"], "kunyomi": ["ひと"], "romajiOn": ["jin","nin"], "romajiKun": ["hito"], "meaning": "person" },
+    { "char": "大", "onyomi": ["ダイ","タイ"], "kunyomi": ["おお"], "romajiOn": ["dai","tai"], "romajiKun": ["oo"], "meaning": "big" },
+    { "char": "小", "onyomi": ["ショウ"], "kunyomi": ["ちい"], "romajiOn": ["shou"], "romajiKun": ["chii"], "meaning": "small" },
+
+    { "char": "山", "onyomi": ["サン"], "kunyomi": ["やま"], "romajiOn": ["san"], "romajiKun": ["yama"], "meaning": "mountain" },
+    { "char": "川", "onyomi": ["セン"], "kunyomi": ["かわ"], "romajiOn": ["sen"], "romajiKun": ["kawa"], "meaning": "river" },
+    { "char": "田", "onyomi": ["デン"], "kunyomi": ["た"], "romajiOn": ["den"], "romajiKun": ["ta"], "meaning": "rice field" },
+    { "char": "天", "onyomi": ["テン"], "kunyomi": ["あめ"], "romajiOn": ["ten"], "romajiKun": ["ame"], "meaning": "heaven / sky" },
+    { "char": "気", "onyomi": ["キ"], "kunyomi": [], "romajiOn": ["ki"], "romajiKun": [], "meaning": "spirit / energy" },
+    { "char": "学", "onyomi": ["ガク"], "kunyomi": ["まな"], "romajiOn": ["gaku"], "romajiKun": ["mana"], "meaning": "study" },
+    { "char": "校", "onyomi": ["コウ"], "kunyomi": [], "romajiOn": ["kou"], "romajiKun": [], "meaning": "school" },
+    { "char": "先", "onyomi": ["セン"], "kunyomi": ["さき"], "romajiOn": ["sen"], "romajiKun": ["saki"], "meaning": "previous / ahead" },
+    { "char": "生", "onyomi": ["セイ","ショウ"], "kunyomi": ["い","う","なま"], "romajiOn": ["sei","shou"], "romajiKun": ["i","u","nama"], "meaning": "life / birth" },
+    { "char": "年", "onyomi": ["ネン"], "kunyomi": ["とし"], "romajiOn": ["nen"], "romajiKun": ["toshi"], "meaning": "year" },
+
+    { "char": "時", "onyomi": ["ジ"], "kunyomi": ["とき"], "romajiOn": ["ji"], "romajiKun": ["toki"], "meaning": "time" },
+    { "char": "今", "onyomi": ["コン"], "kunyomi": ["いま"], "romajiOn": ["kon"], "romajiKun": ["ima"], "meaning": "now" },
+    { "char": "上", "onyomi": ["ジョウ"], "kunyomi": ["うえ"], "romajiOn": ["jou"], "romajiKun": ["ue"], "meaning": "up" },
+    { "char": "下", "onyomi": ["カ","ゲ"], "kunyomi": ["した"], "romajiOn": ["ka","ge"], "romajiKun": ["shita"], "meaning": "down" },
+    { "char": "中", "onyomi": ["チュウ"], "kunyomi": ["なか"], "romajiOn": ["chuu"], "romajiKun": ["naka"], "meaning": "inside / middle" },
+    { "char": "左", "onyomi": ["サ"], "kunyomi": ["ひだり"], "romajiOn": ["sa"], "romajiKun": ["hidari"], "meaning": "left" },
+    { "char": "右", "onyomi": ["ウ"], "kunyomi": ["みぎ"], "romajiOn": ["u"], "romajiKun": ["migi"], "meaning": "right" },
+    { "char": "外", "onyomi": ["ガイ"], "kunyomi": ["そと"], "romajiOn": ["gai"], "romajiKun": ["soto"], "meaning": "outside" },
+    { "char": "国", "onyomi": ["コク"], "kunyomi": ["くに"], "romajiOn": ["koku"], "romajiKun": ["kuni"], "meaning": "country" },
+    { "char": "友", "onyomi": ["ユウ"], "kunyomi": ["とも"], "romajiOn": ["yuu"], "romajiKun": ["tomo"], "meaning": "friend" },
+
+    { "char": "女", "onyomi": ["ジョ"], "kunyomi": ["おんな"], "romajiOn": ["jo"], "romajiKun": ["onna"], "meaning": "woman" },
+    { "char": "男", "onyomi": ["ダン"], "kunyomi": ["おとこ"], "romajiOn": ["dan"], "romajiKun": ["otoko"], "meaning": "man" },
+    { "char": "子", "onyomi": ["シ"], "kunyomi": ["こ"], "romajiOn": ["shi"], "romajiKun": ["ko"], "meaning": "child" },
+    { "char": "父", "onyomi": ["フ"], "kunyomi": ["ちち"], "romajiOn": ["fu"], "romajiKun": ["chichi"], "meaning": "father" },
+    { "char": "母", "onyomi": ["ボ"], "kunyomi": ["はは"], "romajiOn": ["bo"], "romajiKun": ["haha"], "meaning": "mother" },
+    { "char": "名", "onyomi": ["メイ","ミョウ"], "kunyomi": ["な"], "romajiOn": ["mei","myou"], "romajiKun": ["na"], "meaning": "name" },
+    { "char": "何", "onyomi": ["カ"], "kunyomi": ["なに"], "romajiOn": ["ka"], "romajiKun": ["nani"], "meaning": "what" },
+    { "char": "本", "onyomi": ["ホン"], "kunyomi": ["もと"], "romajiOn": ["hon"], "romajiKun": ["moto"], "meaning": "book / origin" },
+    { "char": "休", "onyomi": ["キュウ"], "kunyomi": ["やす"], "romajiOn": ["kyuu"], "romajiKun": ["yasu"], "meaning": "rest" },
+    { "char": "会", "onyomi": ["カイ"], "kunyomi": ["あ"], "romajiOn": ["kai"], "romajiKun": ["a"], "meaning": "meet" }
+  ]
+}

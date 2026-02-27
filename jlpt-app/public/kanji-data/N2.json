@@ -1,0 +1,48 @@
+{
+  "level": "N2",
+  "kanji": [
+    { "char": "提", "onyomi": ["テイ"], "kunyomi": ["さ"], "romajiOn": ["tei"], "romajiKun": ["sa"], "meaning": "propose / present" },
+    { "char": "供", "onyomi": ["キョウ","ク"], "kunyomi": ["とも"], "romajiOn": ["kyou","ku"], "romajiKun": ["tomo"], "meaning": "offer / supply" },
+    { "char": "責", "onyomi": ["セキ"], "kunyomi": ["せ"], "romajiOn": ["seki"], "romajiKun": ["se"], "meaning": "responsibility / blame" },
+    { "char": "任", "onyomi": ["ニン"], "kunyomi": ["まか"], "romajiOn": ["nin"], "romajiKun": ["maka"], "meaning": "duty / entrust" },
+    { "char": "義", "onyomi": ["ギ"], "kunyomi": [], "romajiOn": ["gi"], "romajiKun": [], "meaning": "justice / meaning" },
+    { "char": "務", "onyomi": ["ム"], "kunyomi": ["つと"], "romajiOn": ["mu"], "romajiKun": ["tsuto"], "meaning": "duty / task" },
+    { "char": "許", "onyomi": ["キョ"], "kunyomi": ["ゆる"], "romajiOn": ["kyo"], "romajiKun": ["yuru"], "meaning": "permit / forgive" },
+    { "char": "可", "onyomi": ["カ"], "kunyomi": [], "romajiOn": ["ka"], "romajiKun": [], "meaning": "possible / acceptable" },
+    { "char": "否", "onyomi": ["ヒ"], "kunyomi": [], "romajiOn": ["hi"], "romajiKun": [], "meaning": "negation / deny" },
+    { "char": "違", "onyomi": ["イ"], "kunyomi": ["ちが"], "romajiOn": ["i"], "romajiKun": ["chiga"], "meaning": "differ / wrong" },
+
+    { "char": "含", "onyomi": ["ガン"], "kunyomi": ["ふく"], "romajiOn": ["gan"], "romajiKun": ["fuku"], "meaning": "include / contain" },
+    { "char": "示", "onyomi": ["ジ"], "kunyomi": ["しめ"], "romajiOn": ["ji"], "romajiKun": ["shime"], "meaning": "show / indicate" },
+    { "char": "報", "onyomi": ["ホウ"], "kunyomi": ["むく"], "romajiOn": ["hou"], "romajiKun": ["muku"], "meaning": "report / inform" },
+    { "char": "告", "onyomi": ["コク"], "kunyomi": ["つ"], "romajiOn": ["koku"], "romajiKun": ["tsu"], "meaning": "announce / report" },
+    { "char": "増", "onyomi": ["ゾウ"], "kunyomi": ["ふ"], "romajiOn": ["zou"], "romajiKun": ["fu"], "meaning": "increase" },
+    { "char": "減", "onyomi": ["ゲン"], "kunyomi": ["へ"], "romajiOn": ["gen"], "romajiKun": ["he"], "meaning": "decrease" },
+    { "char": "損", "onyomi": ["ソン"], "kunyomi": ["そこ"], "romajiOn": ["son"], "romajiKun": ["soko"], "meaning": "loss / damage" },
+    { "char": "益", "onyomi": ["エキ"], "kunyomi": [], "romajiOn": ["eki"], "romajiKun": [], "meaning": "benefit / profit" },
+    { "char": "価", "onyomi": ["カ"], "kunyomi": ["あたい"], "romajiOn": ["ka"], "romajiKun": ["atai"], "meaning": "value / price" },
+    { "char": "値", "onyomi": ["チ"], "kunyomi": ["ね"], "romajiOn": ["chi"], "romajiKun": ["ne"], "meaning": "value / worth" },
+
+    { "char": "判", "onyomi": ["ハン"], "kunyomi": [], "romajiOn": ["han"], "romajiKun": [], "meaning": "judge / decide" },
+    { "char": "断", "onyomi": ["ダン"], "kunyomi": ["た"], "romajiOn": ["dan"], "romajiKun": ["ta"], "meaning": "decision / cut off" },
+    { "char": "証", "onyomi": ["ショウ"], "kunyomi": ["あかし"], "romajiOn": ["shou"], "romajiKun": ["akashi"], "meaning": "evidence / proof" },
+    { "char": "防", "onyomi": ["ボウ"], "kunyomi": ["ふせ"], "romajiOn": ["bou"], "romajiKun": ["fuse"], "meaning": "prevent / defend" },
+    { "char": "攻", "onyomi": ["コウ"], "kunyomi": ["せ"], "romajiOn": ["kou"], "romajiKun": ["se"], "meaning": "attack" },
+    { "char": "守", "onyomi": ["シュ"], "kunyomi": ["まも"], "romajiOn": ["shu"], "romajiKun": ["mamo"], "meaning": "protect / obey" },
+    { "char": "危", "onyomi": ["キ"], "kunyomi": ["あぶ"], "romajiOn": ["ki"], "romajiKun": ["abu"], "meaning": "dangerous" },
+    { "char": "険", "onyomi": ["ケン"], "kunyomi": [], "romajiOn": ["ken"], "romajiKun": [], "meaning": "danger / steep" },
+    { "char": "因", "onyomi": ["イン"], "kunyomi": ["よ"], "romajiOn": ["in"], "romajiKun": ["yo"], "meaning": "cause / factor" },
+    { "char": "果", "onyomi": ["カ"], "kunyomi": ["は"], "romajiOn": ["ka"], "romajiKun": ["ha"], "meaning": "result" },
+
+    { "char": "環", "onyomi": ["カン"], "kunyomi": [], "romajiOn": ["kan"], "romajiKun": [], "meaning": "circle / environment" },
+    { "char": "境", "onyomi": ["キョウ"], "kunyomi": ["さかい"], "romajiOn": ["kyou"], "romajiKun": ["sakai"], "meaning": "boundary / environment" },
+    { "char": "際", "onyomi": ["サイ"], "kunyomi": ["きわ"], "romajiOn": ["sai"], "romajiKun": ["kiwa"], "meaning": "occasion / border" },
+    { "char": "限", "onyomi": ["ゲン"], "kunyomi": ["かぎ"], "romajiOn": ["gen"], "romajiKun": ["kagi"], "meaning": "limit" },
+    { "char": "越", "onyomi": ["エツ"], "kunyomi": ["こ"], "romajiOn": ["etsu"], "romajiKun": ["ko"], "meaning": "cross / exceed" },
+    { "char": "超", "onyomi": ["チョウ"], "kunyomi": ["こ"], "romajiOn": ["chou"], "romajiKun": ["ko"], "meaning": "super / exceed" },
+    { "char": "展", "onyomi": ["テン"], "kunyomi": [], "romajiOn": ["ten"], "romajiKun": [], "meaning": "expand / develop" },
+    { "char": "域", "onyomi": ["イキ"], "kunyomi": [], "romajiOn": ["iki"], "romajiKun": [], "meaning": "region / area" },
+    { "char": "支", "onyomi": ["シ"], "kunyomi": ["ささ"], "romajiOn": ["shi"], "romajiKun": ["sasa"], "meaning": "support / branch" },
+    { "char": "援", "onyomi": ["エン"], "kunyomi": [], "romajiOn": ["en"], "romajiKun": [], "meaning": "aid / assist" }
+  ]
+}
